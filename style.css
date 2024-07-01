@@ -108,6 +108,7 @@ header {
    padding: 0;
    list-style: none;
    display: flex;
+   font-size: 0.8rem;
    justify-content: space-between;
    /* justify-content: space-between; */
 
