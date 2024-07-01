@@ -44,8 +44,9 @@ function fomartDate() {
    }
 }
 function fomartTime() {
-   const meridian = hour % 12 || 12 ? "AM" : "PM"
-   hour = hour % 12 || 12
+   const meridian = hour > 12 ? "PM" : "AM"
+   console.log(meridian)
+   // hour = hour % 12 || 12
    if (hour < 10) {
       hour = "0" + hour
    }
