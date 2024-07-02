@@ -44,7 +44,7 @@ function fomartDate() {
    }
 }
 function fomartTime() {
-   const meridian = hour > 12 ? "PM" : "AM"
+   const meridian = hour >= 12 ? "PM" : "AM"
    console.log(meridian)
 
    hour = hour % 12 || 12
@@ -55,7 +55,7 @@ function fomartTime() {
    if (minutes < 10) {
       minutes = '0' + minutes
    }
-   timeEl.textContent = `${hour}:${minutes} ${meridian}`
+   timeEl.textContent = `${hour}:${minutes} ${meridian} - UTC`
 }
 fomartTime()
 fomartDate()
