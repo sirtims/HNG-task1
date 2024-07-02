@@ -10,9 +10,7 @@ body {
 
 }
 
-img {
-   width: 100%;
-}
+img {}
 
 h4 {
    color: rgb(137, 137, 137);
@@ -160,6 +158,10 @@ header {
 
 }
 
+.profile-image {
+   width: 100%;
+}
+
 .profile {
    display: flex;
    flex-direction: column;
@@ -256,9 +258,6 @@ footer {
       padding-bottom: 3em;
    }
 
-   .profile {
-      width: 40%;
-   }
 
    .info {
       width: 60%;
